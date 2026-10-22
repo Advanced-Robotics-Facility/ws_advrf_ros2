@@ -1,0 +1,12 @@
+[submodule "src/advrf_ros2_interfaces"]
+	path = src/advrf_ros2_interfaces
+	url = https://github.com/Advanced-Robotics-Facility/advrf_ros2_interfaces.git
+	branch = main
+[submodule "src/advrf_ros2_miranda_bringup"]
+	path = src/advrf_ros2_miranda_bringup
+	url = https://github.com/Advanced-Robotics-Facility/advrf_ros2_miranda_bringup.git
+	branch = master
+[submodule "src/advrf_ros2_motors_controller"]
+	path = src/advrf_ros2_motors_controller
+	url = https://github.com/Advanced-Robotics-Facility/advrf_ros2_motors_controller.git
+	branch = jazzy
