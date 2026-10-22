@@ -7,3 +7,10 @@ export ROS_DOMAIN_ID=42
 
 ros2 launch advrf_ros2_miranda_bringup moveit.launch.py use_advrf:=true
 ```
+
+## Install
+
+```bash
+sudo apt install ros-jazzy-moveit
+sudo apt install ros-jazzy-gz-sim-vendor
+```
