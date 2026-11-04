@@ -10,3 +10,11 @@
 	path = src/advrf_ros2_motors_controller
 	url = https://github.com/Advanced-Robotics-Facility/advrf_ros2_motors_controller.git
 	branch = jazzy_ec_ros2
+[submodule "src/advrf_ros2_io"]
+	path = src/advrf_ros2_io
+	url = https://github.com/Advanced-Robotics-Facility/advrf_ros2_io.git
+	branch = jazzy_ec_ros2
+[submodule "src/advrf_ros2_ecat"]
+	path = src/advrf_ros2_ecat
+	url = https://github.com/Advanced-Robotics-Facility/advrf_ros2_ecat.git
+	branch = jazzy_ec_ros2
