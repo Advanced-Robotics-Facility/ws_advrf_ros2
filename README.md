@@ -12,5 +12,6 @@ ros2 launch advrf_ros2_miranda_bringup moveit.launch.py use_advrf:=true
 
 ```bash
 sudo apt install ros-jazzy-moveit
-sudo apt install ros-jazzy-gz-sim-vendor
+sudo apt install gz-harmonic libgz-sim8-dev
+sudo apt install ros-jazzy-control-msgs
 ```
