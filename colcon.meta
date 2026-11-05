@@ -1,0 +1,12 @@
+{
+  "names": {
+    "advrf_ros2_ecat": {
+      "cmake-args": [
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+        "-DECAT_INSTALL_PREFIX=/home/embedded/ws/code_ws/install",
+        "-DECAT_CLIENT_SOURCE_DIR=/home/embedded/ws/code_ws/src/ecat-client-advr",
+        "-DXENOMAI=ON"
+      ]
+    }
+  }
+}
