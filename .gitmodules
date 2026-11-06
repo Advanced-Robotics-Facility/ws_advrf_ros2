@@ -18,3 +18,7 @@
 	path = src/advrf_ros2_ecat
 	url = https://github.com/Advanced-Robotics-Facility/advrf_ros2_ecat.git
 	branch = jazzy_ec_ros2
+[submodule "src/advrf_ros2_bringup"]
+	path = src/advrf_ros2_bringup
+	url = https://github.com/Advanced-Robotics-Facility/advrf_ros2_bringup
+	branch = jazzy_ec_ros2
