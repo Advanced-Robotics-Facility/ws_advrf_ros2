@@ -254,9 +254,7 @@ With the ROS environment loaded, launch it with:
 ros2 run plotjuggler plotjuggler
 ```
 
-<details>
-
-<summary>Troubleshooting</summary>
+# Troubleshooting
 
 ## Gazebo dependency troubleshooting
 
@@ -311,5 +309,3 @@ cd ~/ws/ros2_ws
 colcon build --symlink-install --cmake-clean-cache
 source install/setup.bash
 ```
-
-</details>
