@@ -30,8 +30,8 @@ Follow the [official Ubuntu installation instructions](https://docs.ros.org/en/j
 
 ```bash
 cd ~/ws
-git clone https://github.com/Advanced-Robotics-Facility/xenomai-ethercat-setup.git
-cd xenomai-ethercat-setup
+git clone https://github.com/Advanced-Robotics-Facility/advrf-dev-environment.git
+cd advrf-dev-environment
 ./build_ecat.sh
 ```
 
