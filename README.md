@@ -30,7 +30,7 @@ Follow the [official Ubuntu installation instructions](https://docs.ros.org/en/j
 
 ```bash
 cd ~/ws
-git clone https://github.com/Advanced-Robotics-Facility/advrf-dev-environment.git
+git clone https://github.com/Advanced-Robotics-Facility/advrf-dev-environment.git -b ec_ros2/miranda
 cd advrf-dev-environment
 ./build_ecat.sh
 ```
