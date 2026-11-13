@@ -40,18 +40,19 @@ When prompted:
 - Set the workspace name to `code_ws`.
 - Set the workspace parent directory to the absolute path of `~/ws`, such as `/home/your-user/ws`.
 - If you are installing the framework on your personal computer:
-  - Choose No to `Enable Xenomai Real-Time?`
-  - Choose Yes to  `Build GUI Tools?`
+  - Choose `No` to _**Enable Xenomai Real-Time?**_
+  - Choose `Yes` to  _**Build GUI Tools?**_
 - Select all packages and dependencies.
+- Select `package` when prompted _**How should ecat-master-advrf be installed?**_ to download the precompiled package.
 
-Access to the private `ecat-master-advr` repository is required to build the master from source.
+**Note:** Access to the private `ecat-master-advr` repository is required to build the master from source.
 
 ### 4. Clone the robot configuration
 
 ```bash
 mkdir -p ~/ws/configs
 cd ~/ws/configs
-git clone --branch ec_ros2 https://github.com/Advanced-Robotics-Facility/ecat-miranda-config.git
+git clone https://github.com/Advanced-Robotics-Facility/ecat-miranda-config.git
 ```
 
 ## Installation and setup
@@ -62,7 +63,7 @@ Clone the repository with its submodules:
 
 ```bash
 cd ~/ws
-git clone --recurse-submodules --branch jazzy https://github.com/Advanced-Robotics-Facility/ws_advrf_ros2.git ros2_ws
+git clone --recurse-submodules --branch jazzy_ec/main https://github.com/Advanced-Robotics-Facility/ws_advrf_ros2.git ros2_ws
 cd ~/ws/ros2_ws
 ```
 
