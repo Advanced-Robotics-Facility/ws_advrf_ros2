@@ -62,7 +62,7 @@ Clone the repository with its submodules:
 
 ```bash
 cd ~/ws
-git clone --recurse-submodules --branch jazzy_ec/clean https://github.com/Advanced-Robotics-Facility/ws_advrf_ros2.git ros2_ws
+git clone --recurse-submodules --branch jazzy https://github.com/Advanced-Robotics-Facility/ws_advrf_ros2.git ros2_ws
 cd ~/ws/ros2_ws
 ```
 
