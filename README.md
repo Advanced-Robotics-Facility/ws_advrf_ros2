@@ -136,11 +136,11 @@ The dummy master simulates EtherCAT devices for development without the real rob
 
 ### 1. Configure the dummy devices
 
-Edit the master configuration files:
+(`ecat-miranda-config` should be cloned before this step !)
 
+Edit the master configuration files:
 ```bash
-vim ~/.ecat_master/configs/nrt_config.yaml
-vim ~/.ecat_master/configs/ecat_dummy_cfg.yaml
+vim ~/ws/configs/ecat-miranda-config/robot_ecat/nrt_config.yaml
 ```
 
 In `nrt_config.yaml`, set `eth_iface` to your network interface. To list available interfaces:
@@ -149,22 +149,20 @@ In `nrt_config.yaml`, set `eth_iface` to your network interface. To list availab
 ip link show
 ```
 
-In `ecat_dummy_cfg.yaml`, configure the devices and EtherCAT IDs to match the robot.
-
-For the Miranda arm, replace the `SYNAPTICON_v301: 10` entry under the existing device mapping with:
-
 ```yaml
-CENTAC_v15: [11, 12, 13, 14, 15, 16, 302]
+ec_board_ctrl:
+  # if NO eth_iface is defined use env ECAT_ETH_IFACE
+  #eth_iface: eth0
+  #eth_iface: enp29s0
+  eth_iface: enp7s0 # <--- replace this value to your network interface
 ```
-
-Preserve the surrounding YAML structure and indentation. This simulates the seven arm motors with the expected EtherCAT IDs.
 
 ### 2. Start the dummy master
 
 In a terminal with the environment loaded:
 
 ```bash
-repl -d
+repl -f ~/ws/configs/ecat-miranda-config/robot_ecat/nrt_config.yaml -d
 ```
 
 ### 3. Launch a control interface
